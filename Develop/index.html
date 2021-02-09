@@ -18,6 +18,34 @@
         </div>
         <div class="card-body">
 
+          <div>
+            <label for="characters">Number of Characters:</label>
+            <input type="range" id="characters" name="characters" min="8" max="128" value = 14>
+
+            <!-- trying to figure out how to get a textbox to show password length -->
+            <input type="number" id= characterSelection name="characterSelection" value = characters>
+          </div>
+
+          <div>
+            <input type="checkbox" id="lowercase" name="lowercase" checked>
+            <label for="lowercase">Lowercase Letters</label>
+          </div>
+          
+          <div>
+            <input type="checkbox" id="uppercase" name="uppercase" checked>
+            <label for="uppercase">Uppercase Letters</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="numeric" name="numeric" checked>
+            <label for="numeric">Numeric Characters</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="specialCharacter" name="specialCharacter">
+            <label for="specialCharacter">Special Characters</label>
+          </div>
+
           <textarea
             readonly
             id="password"
