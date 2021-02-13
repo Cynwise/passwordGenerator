@@ -1,3 +1,5 @@
+// TODO: add a check that the generated password meets all chosen criteria
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -15,9 +17,9 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword(){
 
-  // initalize blank password and chose character fields
-  var password = " "; 
-  var chosenCharacters = " ";
+  // initalize blank password and chosen character fields
+  var password = ""; 
+  var chosenCharacters = "";
   var uppercaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var lowercaseCharacters = "abcdefghijklmnopqrstuvwxyz";
   var numberCharacters = "0123456789";
@@ -46,6 +48,11 @@ function generatePassword(){
 
     password += chosenCharacters.charAt(char);
 
+  }
+
+  //check to see if user selected at least one character type checkbox
+  if(password === ""){
+    alert("Please select at least one character type checkbox!");
   }
 
   return password;
