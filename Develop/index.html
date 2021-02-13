@@ -20,10 +20,8 @@
 
           <div>
             <label for="characters">Password Length (characters):</label>
-            <input type="range" id="characters" name="characters" min="8" max="128" value = 14>
-
-            <!-- trying to figure out how to get a textbox to show password length -->
-            <input type="number" id= characterSelection name="characterSelection" value = characters>
+            <input type="range" id="characters" name="characters" min="8" max="128" value = 14 oninput = "amount.value=characters.value">
+            <output id="amount" name="amount" for="characters">14</output>
           </div>
 
           <div>

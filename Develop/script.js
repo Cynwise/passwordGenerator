@@ -15,6 +15,7 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword(){
 
+  // initalize blank password and chose character fields
   var password = " "; 
   var chosenCharacters = " ";
   var uppercaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
