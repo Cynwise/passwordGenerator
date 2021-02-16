@@ -25,6 +25,7 @@ function generatePassword(){
   var numberCharacters = "0123456789";
   var specialCharacters = "@%+/!^?~#$";
 
+  //checking which checkboxes were selected
   if(document.getElementById("lowercase").checked){
     chosenCharacters += lowercaseCharacters;
   }
@@ -41,7 +42,7 @@ function generatePassword(){
     chosenCharacters += specialCharacters;
   }
 
-
+  //generate password w/ user chosen criteria
   for (var i = 0; i < document.getElementById("characters").value; i++){
 
     var char = Math.floor(Math.random() * chosenCharacters.length + 1);
@@ -52,8 +53,9 @@ function generatePassword(){
 
   //check to see if user selected at least one character type checkbox
   if(password === ""){
-    alert("Please select at least one character type checkbox!");
+    alert("Please select at least one checkbox!");
   }
+
 
   return password;
 }
