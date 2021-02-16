@@ -11,7 +11,7 @@ Use Instructions:
 
 Screenshot:
 
-   ![image](/assets/passwordGenerator.png ?raw=true "passwordGenerator")
+![image](assets/passwordGenerator.png?raw=true "passwordGenerator")
 
 Challenges & Future Implementation Goals:
 

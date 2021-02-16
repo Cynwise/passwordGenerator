@@ -1,5 +1,3 @@
-// TODO: add a check that the generated password meets all chosen criteria
-
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
